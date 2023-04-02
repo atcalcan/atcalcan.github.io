@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Grizzly";
+    font-weight: normal;
+    font-style: normal;
+    src: url("./itc-grizzly.otf");
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Grizzly';
+}
