@@ -1,3 +1,9 @@
 <app-card>
   <app-profile></app-profile>
 </app-card>
+<div class="repos">
+<app-repo-card
+*ngFor="let rep of repo"
+[rep]="rep"
+></app-repo-card>
+</div>

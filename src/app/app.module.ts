@@ -8,6 +8,9 @@ import { CardComponent } from './card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { LinkComponent } from './link/link.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { GithubService } from './github.service';
+import { HttpClientModule } from '@angular/common/http';
+import { RepoCardComponent } from './repo-card/repo-card.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +18,13 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     ProfileComponent,
     CardComponent,
     LinkComponent,
+    RepoCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
+    HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
@@ -27,7 +32,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
       registrationStrategy: 'registerWhenStable:30000'
     })
   ],
-  providers: [],
+  providers: [GithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
