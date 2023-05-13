@@ -6,6 +6,5 @@ import { Injectable } from '@angular/core';
 export class GithubService {
   link = 'https://github.com/atcalcan'
   id = '79245328'
-
   
 }
