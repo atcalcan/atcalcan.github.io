@@ -1,0 +1,11 @@
+.custom-link {
+    font-size: 18px;
+    color: #afafaf;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+}
