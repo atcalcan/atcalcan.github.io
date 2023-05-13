@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Repo } from '../repo';
+import { LanguageColorsService } from '../language-color.service';
 
 @Component({
   selector: 'app-repo-card',
@@ -9,7 +10,13 @@ import { Repo } from '../repo';
 export class RepoCardComponent implements OnInit {
   @Input() rep!: Repo;
 
+  constructor(private languageColorService: LanguageColorsService) { }
+
+  getCardBackgroundColor(language: string): string {
+    return this.languageColorService.getLanguageColor(language);
+  }
+
   ngOnInit(): void {
-      console.log(this.rep)
+    console.log(this.rep)
   }
 }

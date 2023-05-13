@@ -23,7 +23,7 @@ h5 {
     font-weight: bold;
     color: #4a4a4a;
     letter-spacing: 1px;
-    border-bottom: 2px solid #f0ad4e;
+    border-bottom: 2px solid;
     display: inline-block;
     padding-bottom: 5px;
     margin-bottom: 15px;

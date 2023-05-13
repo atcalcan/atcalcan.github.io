@@ -35,4 +35,6 @@ import { RepoCardComponent } from './repo-card/repo-card.component';
   providers: [GithubService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
