@@ -2,7 +2,7 @@ body {
     background-color: #afafaf;
 }
 
-.repos {
+.repos, .otherRepos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

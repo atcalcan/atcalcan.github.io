@@ -5,7 +5,16 @@
 <h4>Github Public Repos</h4>
 <div class="repos">
 <app-repo-card
-*ngFor="let rep of repo"
+*ngFor="let rep of repositories"
+[rep]="rep"
+></app-repo-card>
+</div>
+
+
+<h4>Other Public Repos I've Contributed to</h4>
+<div class="otherRepos">
+<app-repo-card
+*ngFor="let rep of othersRepos"
 [rep]="rep"
 ></app-repo-card>
 </div>

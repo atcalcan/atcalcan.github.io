@@ -7,16 +7,12 @@ import { LanguageColorsService } from '../language-color.service';
   templateUrl: './repo-card.component.html',
   styleUrls: ['./repo-card.component.css']
 })
-export class RepoCardComponent implements OnInit {
+export class RepoCardComponent {
   @Input() rep!: Repo;
 
   constructor(private languageColorService: LanguageColorsService) { }
 
   getCardBackgroundColor(language: string): string {
     return this.languageColorService.getLanguageColor(language);
-  }
-
-  ngOnInit(): void {
-    console.log(this.rep)
   }
 }
